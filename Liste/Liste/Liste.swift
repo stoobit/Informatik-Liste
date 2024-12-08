@@ -43,6 +43,15 @@ class Liste {
         return result.1
     }
     
+    func entfernen(index: Int) -> Datenelement? {
+        let result = anfang.entfernen(
+            index: index, aktuellerIndex: 1
+        )
+        
+        anfang = result.0
+        return result.1
+    }
+    
     func suchen(suchbegriff: String) -> Liste {
         let suchergebnisse = Liste()
         

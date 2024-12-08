@@ -46,6 +46,23 @@ class Knoten: Listenelement {
         }
     }
     
+    func entfernen(
+        index: Int, aktuellerIndex: Int
+    ) -> (Listenelement, Datenelement?) {
+        
+        let result = nachfolger.entfernen(
+            index: index, aktuellerIndex: aktuellerIndex + 1
+        )
+        
+        self.nachfolger = result.0
+        
+        if index == aktuellerIndex {
+            return (nachfolger, self.datenelement)
+        } else {
+            return (self, result.1)
+        }
+    }
+    
     func hintenEinfügen(datenelement: Datenelement) -> Listenelement {
         nachfolger = nachfolger.hintenEinfügen(datenelement: datenelement)
         return self

@@ -23,7 +23,7 @@ liste.hintenEinfügen(
     datenelement: Kunde(name: "James", id: "8888", kontostand: 4)
 )
 
-liste.listeBereinigen(kontoständeUnter: 5)
+print(liste.entfernen(index: 2)?.informationAusgeben() ?? "nil")
 
 liste.ausgeben()
 

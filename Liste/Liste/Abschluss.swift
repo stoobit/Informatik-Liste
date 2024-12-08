@@ -30,6 +30,12 @@ class Abschluss: Listenelement {
         return (self, nil)
     }
     
+    func entfernen(
+        index: Int, aktuellerIndex: Int
+    ) -> (Listenelement, Datenelement?) {
+        return (self, nil)
+    }
+    
     func hintenEinfügen(datenelement: Datenelement) -> Listenelement {
         return Knoten(nachfolger: self, datenelement: datenelement)
     }
