@@ -18,4 +18,5 @@ protocol Listenelement {
     func anfangEntfernen() -> (Listenelement, Datenelement?)
     func endeEntfernen(d: Datenelement) -> Listenelement
     func hintenEinfügen(datenelement: Datenelement) -> Listenelement
+    func listeBereinigen(kontoständeUnter: Double) -> Listenelement
 }

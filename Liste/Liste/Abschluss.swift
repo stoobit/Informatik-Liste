@@ -43,4 +43,8 @@ class Abschluss: Listenelement {
     func höchstenKontostandGeben() -> Double {
         return 0
     }
+    
+    func listeBereinigen(kontoständeUnter: Double) -> Listenelement {
+        return self
+    }
 }

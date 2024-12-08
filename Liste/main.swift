@@ -20,8 +20,10 @@ liste.vorneEinfügen(
 )
 
 liste.hintenEinfügen(
-    datenelement: Kunde(name: "James", id: "8888", kontostand: 6)
+    datenelement: Kunde(name: "James", id: "8888", kontostand: 4)
 )
+
+liste.listeBereinigen(kontoständeUnter: 5)
 
 liste.ausgeben()
 

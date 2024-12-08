@@ -75,4 +75,16 @@ class Knoten: Listenelement {
         }
        
     }
+    
+    func listeBereinigen(kontoständeUnter: Double) -> Listenelement {
+        nachfolger = nachfolger.listeBereinigen(
+            kontoständeUnter: kontoständeUnter
+        )
+        
+        if self.datenelement.kontostandGeben() < kontoständeUnter {
+            return nachfolger
+        } else {
+            return self
+        }
+    }
 }

@@ -68,4 +68,8 @@ class Liste {
     func höchstenKontostandGeben() -> Double {
         return anfang.höchstenKontostandGeben()
     }
+    
+    func listeBereinigen(kontoständeUnter: Double) {
+        anfang = anfang.listeBereinigen(kontoständeUnter: kontoständeUnter)
+    }
 }
