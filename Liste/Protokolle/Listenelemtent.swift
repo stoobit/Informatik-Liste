@@ -33,4 +33,6 @@ protocol Listenelement {
     func hintenEinfügen(datenelement: Datenelement) -> Listenelement
     
     func listeBereinigen(kontoständeUnter: Double) -> Listenelement
+    
+    func einfügenNach(datenelement: Datenelement, neu: Datenelement)
 }

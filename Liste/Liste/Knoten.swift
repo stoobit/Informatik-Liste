@@ -68,6 +68,17 @@ class Knoten: Listenelement {
         return self
     }
     
+    func einfügenNach(datenelement: Datenelement, neu: Datenelement) {
+        if datenelement.informationAusgeben() == self.datenelement.informationAusgeben() {
+            
+            nachfolger = Knoten(
+                nachfolger: nachfolger, datenelement: neu
+            )
+        } else {
+            nachfolger.einfügenNach(datenelement: datenelement, neu: neu)
+        }
+    }
+    
     func suchen(suchbegriff: String, suchergebnisse: Liste) {
         if datenelement.informationAusgeben().contains(suchbegriff) {
             suchergebnisse.vorneEinfügen(datenelement: datenelement)

@@ -27,6 +27,10 @@ class Liste {
         anfang = anfang.hintenEinfügen(datenelement: datenelement)
     }
     
+    func einfügenNach(datenelement: Datenelement, neu: Datenelement) {
+        anfang.einfügenNach(datenelement: datenelement, neu: neu)
+    }
+    
     func endeEntfernen() -> Datenelement? {
         guard let datenelement = anfang.endeGeben(listenelement: anfang) else {
             return nil

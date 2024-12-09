@@ -19,11 +19,10 @@ liste.vorneEinfügen(
     datenelement: Kunde(name: "Jochen", id: "9123", kontostand: 1)
 )
 
-liste.hintenEinfügen(
-    datenelement: Kunde(name: "James", id: "8888", kontostand: 4)
+liste.einfügenNach(
+    datenelement:Kunde(name: "Hans", id: "1234", kontostand: 200),
+    neu: Kunde(name: "Paul", id: "0000", kontostand: 100)
 )
-
-print(liste.entfernen(index: 2)?.informationAusgeben() ?? "nil")
 
 liste.ausgeben()
 

@@ -53,4 +53,8 @@ class Abschluss: Listenelement {
     func listeBereinigen(kontoständeUnter: Double) -> Listenelement {
         return self
     }
+    
+    func einfügenNach(datenelement: Datenelement, neu: Datenelement) {
+        print("Datenelement nicht gefunden.")
+    }
 }
