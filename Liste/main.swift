@@ -9,19 +9,18 @@ import Foundation
 
 let liste = Liste()
 
-liste.vorneEinfügen(
-    datenelement: Kunde(name: "Hans", id: "1234", kontostand: 200)
+liste.sortiertEinfügen(
+    datenelement: Kunde(name: "B", id: "1234", kontostand: 200)
 )
-liste.vorneEinfügen(
-    datenelement: Kunde(name: "Peter", id: "5678", kontostand: 3000)
+liste.sortiertEinfügen(
+    datenelement: Kunde(name: "C", id: "5678", kontostand: 3000)
 )
-liste.vorneEinfügen(
-    datenelement: Kunde(name: "Jochen", id: "9123", kontostand: 1)
+liste.sortiertEinfügen(
+    datenelement: Kunde(name: "E", id: "9123", kontostand: 1)
 )
 
-liste.einfügenNach(
-    datenelement:Kunde(name: "Hans", id: "1234", kontostand: 200),
-    neu: Kunde(name: "Paul", id: "0000", kontostand: 100)
+liste.sortiertEinfügen(
+    datenelement: Kunde(name: "A", id: "0000", kontostand: 0)
 )
 
 liste.ausgeben()

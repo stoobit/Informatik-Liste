@@ -31,6 +31,10 @@ class Liste {
         anfang.einfügenNach(datenelement: datenelement, neu: neu)
     }
     
+    func sortiertEinfügen(datenelement: Datenelement) {
+        anfang = anfang.sortiertEinfügen(datenelement: datenelement)
+    }
+    
     func endeEntfernen() -> Datenelement? {
         guard let datenelement = anfang.endeGeben(listenelement: anfang) else {
             return nil

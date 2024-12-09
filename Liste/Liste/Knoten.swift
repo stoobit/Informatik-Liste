@@ -79,6 +79,16 @@ class Knoten: Listenelement {
         }
     }
     
+    func sortiertEinfügen(datenelement: Datenelement) -> Listenelement {
+        if datenelement.nameGeben() > self.datenelement.nameGeben() {
+            nachfolger = nachfolger.sortiertEinfügen(datenelement: datenelement)
+            return self
+            
+        }
+        
+        return Knoten(nachfolger: self, datenelement: datenelement)
+    }
+    
     func suchen(suchbegriff: String, suchergebnisse: Liste) {
         if datenelement.informationAusgeben().contains(suchbegriff) {
             suchergebnisse.vorneEinfügen(datenelement: datenelement)

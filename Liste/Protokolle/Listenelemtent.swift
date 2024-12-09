@@ -35,4 +35,6 @@ protocol Listenelement {
     func listeBereinigen(kontoständeUnter: Double) -> Listenelement
     
     func einfügenNach(datenelement: Datenelement, neu: Datenelement)
+    
+    func sortiertEinfügen(datenelement: Datenelement) -> Listenelement
 }

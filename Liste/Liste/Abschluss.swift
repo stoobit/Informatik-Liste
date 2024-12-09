@@ -57,4 +57,8 @@ class Abschluss: Listenelement {
     func einfügenNach(datenelement: Datenelement, neu: Datenelement) {
         print("Datenelement nicht gefunden.")
     }
+    
+    func sortiertEinfügen(datenelement: Datenelement) -> Listenelement {
+        return Knoten(nachfolger: self, datenelement: datenelement)
+    }
 }

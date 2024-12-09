@@ -26,4 +26,8 @@ class Kunde: Datenelement {
     func informationAusgeben() -> String {
         return "\(id), \(name), \(kontostand)"
     }
+    
+    func nameGeben() -> String {
+        return name
+    }
 }

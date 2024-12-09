@@ -20,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		BB135E1E2CEDF2C8008FB069 /* Liste */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Liste; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB3CE5772D0659F900CCA164 /* Methoden.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Methoden.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +44,6 @@
 		BB135E152CEDF2C8008FB069 = {
 			isa = PBXGroup;
 			children = (
-				BB3CE5772D0659F900CCA164 /* Methoden.md */,
 				BB135E202CEDF2C8008FB069 /* Liste */,
 				BB135E1F2CEDF2C8008FB069 /* Products */,
 			);

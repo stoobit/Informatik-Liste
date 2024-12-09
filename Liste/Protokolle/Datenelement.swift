@@ -10,4 +10,5 @@ import Foundation
 protocol Datenelement {
     func informationAusgeben() -> String
     func kontostandGeben() -> Double
+    func nameGeben() -> String
 }
