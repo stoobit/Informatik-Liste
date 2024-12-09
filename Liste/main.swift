@@ -23,6 +23,8 @@ liste.sortiertEinfügen(
     datenelement: Kunde(name: "A", id: "0000", kontostand: 0)
 )
 
+print(liste.höchstenKontostandGeben())
+
 liste.ausgeben()
 
 

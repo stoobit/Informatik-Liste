@@ -111,7 +111,6 @@ class Knoten: Listenelement {
         } else {
             return self.datenelement.kontostandGeben()
         }
-       
     }
     
     func listeBereinigen(kontoständeUnter: Double) -> Listenelement {
